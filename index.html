@@ -17,16 +17,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="theme-color" content="#6366f1">
-    <title>Prepogy - CMA Student Practice Hub | ICMAI Syllabus 2022</title>
-    <!-- OPTIMIZED SEO META DESCRIPTION FOR ASPIRANTS -->
-    <meta name="description" content="The ultimate practice platform for CMA students and aspirants. Master ICMAI Syllabus 2022 with Prepogy's official MCQ Bank, past exam questions, and concept notes.">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://prepogy.in/">
+
+    <!-- UPDATED: Simple, Navigational Title -->
+    <title>Prepogy - Free CMA MCQ Practice Hub (ICMAI Syllabus 2022)</title>
+    
+    <!-- UPDATED: Straightforward Description with Safe Wording -->
+    <meta name="description" content="Free MCQ practice portal for CMA Foundation, Intermediate, and Final students. Practice questions released by the CMA Institute through publicly available examination and study materials with immediate answers and feedback.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { theme: { extend: { fontFamily: { sans: ['Poppins', 'sans-serif'] }, colors: { primary: { DEFAULT: '#6366f1', dark: '#4f46e5' }, success: '#10b981', error: '#ef4444', surface: '#ffffff', sjc: '#036176', }, boxShadow: { soft: '0 10px 40px -10px rgba(0,0,0,0.06)', hover: '0 20px 40px -5px rgba(99, 102, 241, 0.12)', }, animation: { 'rise': 'rise 20s linear infinite', 'floating': 'floating 4s ease-in-out infinite', 'fade-in-up': 'fadeInUp 0.3s ease forwards', }, keyframes: { rise: { 'from': { transform: 'translateY(0) rotate(0deg)', opacity: '0.4' }, 'to': { transform: 'translateY(-120vh) rotate(360deg)', opacity: '0' } }, floating: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-12px)' } }, fadeInUp: { 'from': { opacity: '0', transform: 'translateY(10px)' }, 'to': { opacity: '1', transform: 'translateY(0)' } }, } } } }
     </script>
     <style type="text/tailwindcss">
-        @layer utilities { .scrollbar-hide::-webkit-scrollbar { display: none; } .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; } .text-gradient-original { @apply bg-clip-text text-transparent bg-[linear-gradient(135deg,#10b981,#6366f1,#db2777,#f59e0b)]; } .scrollbar-gutter-stable { scrollbar-gutter: stable; } }
+        @layer utilities { 
+            .scrollbar-hide::-webkit-scrollbar { display: none; } 
+            .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; } 
+            .text-gradient-original { @apply bg-clip-text text-transparent bg-[linear-gradient(135deg,#10b981,#6366f1,#db2777,#f59e0b)]; } 
+            .scrollbar-gutter-stable { scrollbar-gutter: stable; } 
+        }
         @layer components { 
             .view-section { @apply hidden opacity-0 translate-y-4 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] max-w-6xl mx-auto px-5 pb-20 w-full; } .view-section.active { @apply block opacity-100 translate-y-0; } 
             
@@ -35,7 +46,6 @@
                 background-origin: padding-box, border-box; 
                 background-clip: padding-box, border-box; 
             }
-            /* Enhanced Hover Effect */
             .card-base:hover {
                 @apply -translate-y-2 bg-gradient-to-br from-white via-indigo-50 to-purple-50 shadow-[0_20px_50px_-12px_rgba(99,102,241,0.3)];
             }
@@ -45,10 +55,11 @@
             .card-inter { background-image: linear-gradient(white, white), linear-gradient(135deg, #6366f1, #a855f7); } 
             .card-final { background-image: linear-gradient(white, white), linear-gradient(135deg, #f59e0b, #db2777); } 
             
-            .shape { @apply absolute bottom-[-150px] opacity-15 font-bold block will-change-transform animate-rise; line-height: 1; } 
+            /* UPDATED: Animation Style to match other files (lighter, more opaque) */
+            .shape { @apply absolute bottom-[-100px] opacity-60 font-bold block will-change-transform animate-rise pointer-events-none; line-height: 1; } 
+            
             .ad-container { @apply my-6 mx-auto text-center w-full overflow-hidden max-w-4xl min-h-[50px]; } 
 
-            /* Burst Particle CSS */
             .burst-particle {
                 position: fixed;
                 top: 0;
@@ -65,7 +76,6 @@
                 100% { transform: translate(calc(var(--origin-x) + var(--tx)), calc(var(--origin-y) + var(--ty))) scale(0); opacity: 0; }
             }
 
-            /* Sitemap CSS */
             .seo-sitemap { 
                 @apply hidden w-full max-w-5xl mx-auto mt-8 p-8 bg-slate-50 rounded-[32px] text-left border border-slate-100 shadow-inner;
             }
@@ -74,6 +84,10 @@
             .seo-sitemap ul { @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 list-none p-0; }
             .seo-sitemap a { @apply text-xs text-slate-500 hover:text-primary transition-colors flex items-center gap-2; }
             .seo-sitemap a::before { content: '•'; @apply text-slate-300; }
+
+            .article-body h2 { @apply text-xl md:text-2xl font-black text-slate-800 mt-10 mb-5 flex items-center gap-2; }
+            .article-body h3 { @apply text-lg font-bold text-primary mt-8 mb-3; }
+            .article-body p { @apply text-slate-600 leading-relaxed mb-4 text-sm md:text-base; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -81,11 +95,18 @@
 </head>
 <body class="font-sans bg-slate-50 text-gray-800 overflow-x-hidden antialiased min-h-screen flex flex-col cursor-auto">
 
-    <!-- Background Shapes -->
+    <!-- UPDATED: Enhanced Background Animation (10 Symbols, Mixed Colors) -->
     <div class="fixed inset-0 w-full h-full pointer-events-none -z-10 overflow-hidden select-none" aria-hidden="true">
-        <div class="shape left-[10%] text-[55px] text-emerald-500" style="animation-duration: 22s;">₹</div>
-        <div class="shape left-[50%] text-[55px] text-amber-500" style="animation-duration: 20s;">€</div>
-        <div class="shape left-[80%] text-[65px] text-indigo-500" style="animation-duration: 28s;">×</div>
+        <div class="shape left-[5%] text-[40px] text-emerald-200" style="animation-duration: 25s; animation-delay: 0s;">₹</div>
+        <div class="shape left-[15%] text-[30px] text-indigo-200" style="animation-duration: 20s; animation-delay: 2s;">%</div>
+        <div class="shape left-[25%] text-[50px] text-amber-200" style="animation-duration: 28s; animation-delay: 5s;">$</div>
+        <div class="shape left-[35%] text-[45px] text-rose-200" style="animation-duration: 22s; animation-delay: 1s;">+</div>
+        <div class="shape left-[45%] text-[35px] text-blue-200" style="animation-duration: 26s; animation-delay: 7s;">€</div>
+        <div class="shape left-[55%] text-[55px] text-violet-200" style="animation-duration: 24s; animation-delay: 3s;">π</div>
+        <div class="shape left-[65%] text-[40px] text-orange-200" style="animation-duration: 29s; animation-delay: 6s;">£</div>
+        <div class="shape left-[75%] text-[30px] text-pink-200" style="animation-duration: 21s; animation-delay: 4s;">×</div>
+        <div class="shape left-[85%] text-[50px] text-teal-200" style="animation-duration: 27s; animation-delay: 8s;">¥</div>
+        <div class="shape left-[95%] text-[45px] text-cyan-200" style="animation-duration: 23s; animation-delay: 2s;">∑</div>
     </div>
 
     <!-- Floating Action Buttons -->
@@ -145,7 +166,7 @@
                     <span class="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full uppercase tracking-wider">4 New</span>
                 </div>
                 <div class="max-h-[60vh] overflow-y-auto">
-                    <!-- Item 1: CMA Inter Bug Fixes -->
+                    <!-- Notifications Content (Unchanged) -->
                     <div class="p-4 border-b border-gray-50 hover:bg-emerald-50/30 transition-colors">
                         <div class="flex gap-3">
                             <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i class="fas fa-check-circle"></i></div>
@@ -155,7 +176,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 2: Audit Revision -->
                     <div class="p-4 border-b border-gray-50 hover:bg-indigo-50/30 transition-colors">
                         <div class="flex gap-3">
                             <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600"><i class="fas fa-rocket"></i></div>
@@ -165,7 +185,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 3: Foundation Star Series -->
                     <div class="p-4 border-b border-gray-50 hover:bg-amber-50/30 transition-colors">
                         <div class="flex gap-3">
                             <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i class="fas fa-star"></i></div>
@@ -175,7 +194,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 4: Roadmap -->
                     <div class="p-4 hover:bg-purple-50/30 transition-colors">
                         <div class="flex gap-3">
                             <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"><i class="fas fa-tools"></i></div>
@@ -189,11 +207,11 @@
             </div>
         </div>
 
-        <div class="w-24 h-24 md:w-36 md:h-36 mx-auto mb-5 cursor-pointer transition-all duration-300 hover:scale-110 flex items-center justify-center animate-floating" id="logoHome" role="button" onclick="location.reload()">
+        <div class="w-24 h-24 md:w-36 md:h-36 mx-auto mb-5 cursor-pointer transition-all duration-300 hover:scale-110 flex items-center justify-center animate-floating" id="logoHome" role="button" onclick="App.showView('view-home')">
             <img src="prep.png" alt="Prepogy - CMA Exam Hub Logo" width="144" height="144" class="w-full h-auto object-contain">
         </div>
         <h1 class="text-[clamp(2rem,6vw,3.5rem)] font-extrabold uppercase tracking-[2px] text-gradient-original mb-1">Prepogy</h1>
-        <p class="text-[0.9em] text-slate-500 font-medium tracking-wide mt-1">Free Online Practice Hub for CMA Students & Aspirants | Foundation, Inter & Final</p>
+        <p class="text-[0.9em] text-slate-500 font-medium tracking-wide mt-1">Free Online Practice Hub for CMA Aspirants | Foundation, Inter & Final</p>
     </header>
 
     <!-- AdSense Top Banner -->
@@ -261,6 +279,68 @@
                 </a>
             </div>
         </section>
+
+        <!-- ABOUT VIEW -->
+        <section id="view-about" class="view-section">
+            <button class="mb-8 font-bold flex items-center gap-2 text-primary bg-white px-6 py-2.5 rounded-full shadow-sm hover:shadow-md border border-slate-100 transition-transform hover:scale-105" onclick="App.showView('view-home')"><i class="fas fa-arrow-left"></i> Back</button>
+            <div class="bg-white p-8 md:p-12 rounded-[32px] shadow-xl leading-relaxed max-w-4xl mx-auto">
+                <h2 class="text-3xl font-extrabold mb-8 text-primary flex items-center gap-3">📚 About Prepogy</h2>
+                <div class="space-y-6 text-slate-700 article-body">
+                    <p class="text-lg font-medium">My motivation for creating this website is to provide CMA students with an easy and effective way to prepare for their exams. 🎯</p>
+                    <div class="bg-indigo-50 p-6 rounded-2xl border-l-4 border-primary">
+                        <p class="italic text-slate-600 text-sm md:text-base">"The idea sparked back in 2019 while I was preparing for my driving license test—a computer-based MCQ exam at the RTO. 🚗💻 I downloaded an app, attempted all 200 questions in one go, and despite making mistakes, the instant learning process was incredibly effective. That experience inspired me to build this platform for you! 💡✨"</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                        <div class="p-6 bg-emerald-50 rounded-2xl border border-emerald-100">
+                            <h3 class="font-bold text-emerald-700 mb-2 flex items-center gap-2"><i class="fas fa-check-circle"></i> Authentic Content</h3>
+                            <p class="text-sm text-slate-600">All questions are sourced directly from the official <strong>CMA Institute MCQ bank</strong>.</p>
+                        </div>
+                        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                            <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2"><i class="fas fa-rocket"></i> SCOPE OF WEBSITE</h3>
+                            <p class="text-sm text-slate-600">Focus on Syllabus 2022 and Previous Year Questions (2013-2025).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY VIEW -->
+        <section id="view-privacy" class="view-section">
+            <button class="mb-8 font-bold flex items-center gap-2 text-emerald-600 bg-white px-6 py-2.5 rounded-full shadow-sm hover:shadow-md border border-slate-100 transition-transform hover:scale-105" onclick="App.showView('view-home')"><i class="fas fa-arrow-left"></i> Back</button>
+            <div class="bg-white p-8 md:p-12 rounded-[32px] shadow-lg max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-emerald-600">🛡️ Privacy Policy</h2>
+                <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed article-body">
+                    <p>At Prepogy.in, one of our main priorities is the privacy of our visitors. We do not require registration or personal accounts to use our services.</p>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2 border-l-4 border-primary pl-3">1. Information We Collect</h3>
+                        <p>Prepogy is designed to be a "privacy-first" platform. We do not store personal student identifiers like phone numbers or emails. Your progress is saved locally on your device.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2 border-l-4 border-primary pl-3">2. Cookies</h3>
+                        <p>We use standard analytics and ad-serving cookies to maintain site performance and support our educational mission. These help us understand which topics students find most helpful.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERMS VIEW -->
+        <section id="view-terms" class="view-section">
+            <button class="mb-8 font-bold flex items-center gap-2 text-amber-600 bg-white px-6 py-2.5 rounded-full shadow-sm hover:shadow-md border border-slate-100 transition-transform hover:scale-105" onclick="App.showView('view-home')"><i class="fas fa-arrow-left"></i> Back</button>
+            <div class="bg-white p-8 md:p-12 rounded-[32px] shadow-lg max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-6 text-amber-600">📜 Terms and Conditions</h2>
+                <div class="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed article-body">
+                    <p>Welcome to Prepogy. These terms outline the rules for using our practice platform.</p>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2 border-l-4 border-primary pl-3">1. Property Rights</h3>
+                        <p>All educational MCQs and syllabus data are sourced from official ICMAI public materials for fair educational use. Prepogy claims no ownership over the question bank itself.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2 border-l-4 border-primary pl-3">2. Disclaimer</h3>
+                        <p>The content provided is for practice and self-assessment purposes. While we strive for accuracy, students should always consult official study modules for final exam preparation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <!-- AdSense Footer Banner -->
@@ -284,24 +364,12 @@
             </a>
         </div>
         <div class="flex flex-wrap justify-center gap-6 mb-4 text-xs font-bold uppercase tracking-widest text-slate-400 px-4 items-center">
-            <a href="index.html" class="hover:text-primary transition-colors no-underline text-slate-400">Home</a>
+            <button onclick="App.showView('view-home')" class="hover:text-primary transition-colors no-underline text-slate-400 bg-transparent border-0 cursor-pointer p-0 font-bold uppercase tracking-widest">Home</button>
             <a href="blog.html" class="hover:text-indigo-600 transition-colors no-underline text-slate-400">Blog</a>
-            <a href="about.html" class="hover:text-primary transition-colors no-underline text-slate-400">About</a>
-            <a href="privacy.html" class="hover:text-emerald-500 transition-colors no-underline text-slate-400">Privacy</a>
-            <a href="terms.html" class="hover:text-amber-600 transition-colors no-underline text-slate-400">Terms</a>
+            <button onclick="App.showView('view-about')" class="hover:text-primary transition-colors no-underline text-slate-400 bg-transparent border-0 cursor-pointer p-0 font-bold uppercase tracking-widest">About</button>
+            <button onclick="App.showView('view-privacy')" class="hover:text-emerald-500 transition-colors no-underline text-slate-400 bg-transparent border-0 cursor-pointer p-0 font-bold uppercase tracking-widest">Privacy</button>
+            <button onclick="App.showView('view-terms')" class="hover:text-amber-600 transition-colors no-underline text-slate-400 bg-transparent border-0 cursor-pointer p-0 font-bold uppercase tracking-widest">Terms</button>
             <button onclick="App.toggleSitemap()" class="hover:text-primary transition-colors uppercase tracking-widest bg-transparent border-0 cursor-pointer p-0 font-bold text-slate-400">Sitemap</button>
-        </div>
-
-        <div class="flex justify-center mb-8 mt-6">
-             <button onclick="App.toggleAspirantInfo()" class="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-xs uppercase tracking-widest shadow-lg hover:shadow-xl hover:scale-105 transition-all transform flex items-center gap-2">
-                <i class="fas fa-graduation-cap"></i> For CMA Aspirants
-            </button>
-        </div>
-
-        <!-- HIDDEN ASPIRANT INFO CONTAINER -->
-        <div id="aspirantInfoContainer" class="hidden w-full max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-inner border border-slate-100 text-left mb-8 animate-fade-in-up">
-             <h2 class="text-lg font-bold text-slate-700 mb-2">Built for CMA Students & Aspirants</h2>
-             <p class="text-sm text-slate-500 leading-relaxed">Prepogy is India's dedicated platform designed exclusively for <strong>Cost and Management Accountant (CMA) students and aspirants</strong>. We provide a complete practice environment covering the official <strong>ICMAI Syllabus 2022 MCQ Bank</strong>. Our extensive database includes questions directly released by ICMAI, <strong>Past Exam MCQ Questions</strong> to help you understand trends, and <strong>Important Concept Summary Notes</strong> for quick revision. Practice unlimited questions for free to boost your exam confidence.</p>
         </div>
         
         <!-- Collapsible Sitemap Container -->
@@ -340,6 +408,19 @@
                 <li><a href="paper20A-MCQ.html">CMA Paper 20A MCQ SPMBV</a></li>
                 <li><a href="paper20B-MCQ.html">CMA Paper 20B MCQ Risk Management</a></li>
                 <li><a href="paper20C-MCQ.html">CMA Paper 20C MCQ International Tax</a></li>
+            </ul>
+        </div>
+        
+        <!-- NEW HIDDEN SEO BLOCK: Purpose & Internal Links -->
+        <div class="sr-only">
+            <h2>CMA MCQ Practice Navigation Hub</h2>
+            <p>Prepogy is a centralized navigation hub designed for CMA students to access subject-wise MCQ practice tests. We cover the entire ICMAI 2022 syllabus, including Foundation, Intermediate (Group 1 & 2), and Final (Group 3 & 4) levels. The platform offers a quiz-based environment where students can practice questions released by the CMA Institute through publicly available examination and study materials and get instant solutions to enhance their exam preparation.</p>
+            <ul>
+                <li><a href="foundation.html">CMA Foundation Practice (Papers 1-4)</a></li>
+                <li><a href="intermediate-group1.html">CMA Intermediate Group 1 Practice (Papers 5-8)</a></li>
+                <li><a href="intermediate-group2.html">CMA Intermediate Group 2 Practice (Papers 9-12)</a></li>
+                <li><a href="final-group3.html">CMA Final Group 3 Practice (Papers 13-16)</a></li>
+                <li><a href="final-group4.html">CMA Final Group 4 Practice (Papers 17-20)</a></li>
             </ul>
         </div>
 
@@ -405,14 +486,6 @@
                 if (el.classList.contains('active')) {
                     // Smooth scroll to sitemap if opened
                     setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-                }
-            },
-
-            toggleAspirantInfo() {
-                const el = document.getElementById('aspirantInfoContainer');
-                el.classList.toggle('hidden');
-                if (!el.classList.contains('hidden')) {
-                    setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
                 }
             },
 
