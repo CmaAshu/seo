@@ -2,14 +2,13 @@
 <html lang="en" class="scrollbar-gutter-stable">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLGRHV6077"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FLGRHV6077');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLGRHV6077"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FLGRHV6077');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
@@ -24,12 +23,31 @@
     <link rel="canonical" href="https://prepogy.in/blog.html" />
 
     <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://prepogy.in/blog.html">
     <meta property="og:title" content="CMA Intermediate 30-Day Blueprints for Success | Prepogy">
     <meta property="og:description" content="Get structured study plans for CMA Inter Papers 6, 7, and 8. Transform your preparation with smart prioritization and master the ICMAI exams.">
     <meta property="og:image" content="https://prepogy.in/prep.png">
     <meta property="og:site_name" content="Prepogy">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Prepogy CMA Blog",
+      "url": "https://prepogy.in/blog.html",
+      "description": "Expert study blueprints and strategies for CMA Intermediate students, covering Financial Accounting, Taxation, Law, and Costing.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prepogy",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://prepogy.in/prep.png"
+        }
+      }
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,7 +147,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Financial Accounting Card -->
-                <article class="blog-card group cursor-pointer" onclick="showView('view-article-accounts')">
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-accounts.html'">
                     <div class="h-40 md:h-48 bg-rose-100 relative overflow-hidden flex items-center justify-center text-rose-400 text-5xl">
                         <i class="fas fa-calculator group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
@@ -146,7 +164,7 @@
                 </article>
 
                 <!-- Taxation Card -->
-                <article class="blog-card group cursor-pointer" onclick="showView('view-article-taxation')">
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-taxation.html'">
                     <div class="h-40 md:h-48 bg-amber-100 relative overflow-hidden flex items-center justify-center text-amber-400 text-5xl">
                         <i class="fas fa-file-invoice-dollar group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
@@ -163,7 +181,7 @@
                 </article>
 
                 <!-- Law Card -->
-                <article class="blog-card group cursor-pointer" onclick="showView('view-article-law')">
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-law.html'">
                     <div class="h-40 md:h-48 bg-emerald-100 relative overflow-hidden flex items-center justify-center text-emerald-300 text-5xl">
                         <i class="fas fa-gavel group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
@@ -180,7 +198,7 @@
                 </article>
 
                 <!-- Costing Card -->
-                <article class="blog-card group cursor-pointer" onclick="showView('view-article-costing')">
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-costing.html'">
                     <div class="h-40 md:h-48 bg-indigo-100 relative overflow-hidden flex items-center justify-center text-indigo-300 text-5xl">
                         <i class="fas fa-chart-line group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
@@ -195,288 +213,75 @@
                         </div>
                     </div>
                 </article>
-            </div>
-        </section>
 
-        <!-- Article Sections -->
-
-        <!-- Article: Financial Accounting -->
-        <section id="view-article-accounts" class="view-section">
-            <button onclick="showView('view-blog')" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back to Blog
-            </button>
-            <article class="bg-white rounded-[32px] md:rounded-[40px] shadow-xl overflow-hidden max-w-4xl mx-auto">
-                <header class="bg-gradient-to-br from-rose-500 to-rose-700 p-8 md:p-20 text-center text-white">
-                    <h1 class="text-2xl md:text-5xl font-extrabold leading-tight">Mastering CMA Inter Financial Accounting: A 30-Day Blueprint for Success 🚀📊</h1>
-                </header>
-                <div class="p-6 md:p-16 article-body">
-                    <p class="text-base md:text-lg font-medium text-slate-700 italic mb-8">Financial Accounting (Paper 6) is one of the most substantial and rewarding papers in the CMA Intermediate curriculum. While it is lengthy, it is also highly scoring if you master the "Art of Attempting" and prioritize the right topics. 🎨📈</p>
-                    
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7792469883739877" data-ad-slot="IN_ARTICLE_SLOT"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                <!-- FMDA Card -->
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-fmda.html'">
+                    <div class="h-40 md:h-48 bg-cyan-100 relative overflow-hidden flex items-center justify-center text-cyan-400 text-5xl">
+                        <i class="fas fa-chart-pie group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-
-                    <p>Here is your strategic 30-day blueprint to navigate this subject with precision and achieve that 70+ target! 🎯✨</p>
-
-                    <h2>📝 The Secret to 30 Marks: MCQs & Strategy</h2>
-                    <p>Before diving into long problems, secure your foundation with the Objective section.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> <strong>Accuracy is King:</strong> There is no negative marking, so ensure you attempt all 15 questions. Focus on the final option; no need to show working or provide reasons. ✅</li>
-                        <li><i class="fas fa-history"></i> <strong>Repetition is Key:</strong> Practicing past papers and standard objective banks can help you secure 20+ marks in just 15 minutes! ⏱️🔢</li>
-                    </ul>
-
-                    <h2>🏗️ Phase 1: High-Yield Foundation (Days 1–10)</h2>
-                    <p>A significant portion of the paper stems from foundational topics. Strengthening these can give you a massive lead. 🧱</p>
-                    <ul>
-                        <li><i class="fas fa-box-open"></i> <strong>Days 1–4: Basic Practical Chapters:</strong> Focus on Consignment, Bills of Exchange, and Joint Ventures. These are often tested in 7-mark segments and are highly scoring. 📦📜</li>
-                        <li><i class="fas fa-university"></i> <strong>Days 5–7: Reconciliation & Assets:</strong> Master Bank Reconciliation Statements (BRS) and Depreciation. These chapters frequently appear in the early part of the subjective section. 🏦📉</li>
-                        <li><i class="fas fa-pencil-alt"></i> <strong>Days 8–10: Rectification & Basics:</strong> Quickly brush up on Rectification of Errors and Capital/Revenue transactions. These are vital for both MCQs and short practical questions. ✏️✔️</li>
-                    </ul>
-
-                    <h2>🏭 Phase 2: Core Intermediate Modules (Days 11–20)</h2>
-                    <p>This phase covers the "Tier 1" chapters that carry the maximum weightage and require the most practice. 🛠️</p>
-                    <ul>
-                        <li><i class="fas fa-users"></i> <strong>Days 11–14: Single Entry & Partnership:</strong> These are the most lengthy chapters. You will often see full 14-mark questions from these. <strong>Exam Tip:</strong> In the exam, try to choose between a Single Entry or a Partnership question to manage time effectively—don't get bogged down by attempting both if time is tight! 🤝</li>
-                        <li><i class="fas fa-building"></i> <strong>Days 15–17: Branch & Departmental Accounting:</strong> Focus on Dependent Branches, as they are a favorite for examiners. Departmental accounts are generally straightforward and should be practiced for accuracy. 🏢🌿</li>
-                        <li><i class="fas fa-file-signature"></i> <strong>Days 18–20: Insurance Claims & Hire Purchase:</strong> Master the calculation of "Loss of Stock" and "Loss of Profit" for insurance. For Hire Purchase, focus on interest calculations and repossession. 📑🛡️</li>
-                    </ul>
-
-                    <h2>⚖️ Phase 3: Accounting Standards & Specialized Topics (Days 21–25)</h2>
-                    <p>Accounting Standards (AS) are the backbone of professional accounting. 🏛️</p>
-                    <ul>
-                        <li><i class="fas fa-landmark"></i> <strong>Days 21–23: The "Big Four" Standards:</strong> Prioritize AS 10 (PPE), AS 11 (Foreign Exchange), AS 12 (Gov Grants), and AS 16 (Borrowing Costs). 🏗️🌐</li>
-                        <li><i class="fas fa-hand-holding-usd"></i> <strong>Days 24–25: Lease Accounting:</strong> Focus on AS 19 (Leases), specifically Finance vs. Operating leases. This often appears as a 7-mark practical question. 📄🏢</li>
-                    </ul>
-
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7792469883739877" data-ad-slot="AUTO_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold text-cyan-600 uppercase tracking-widest bg-cyan-50 px-3 py-1 rounded-full">Paper 11</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors leading-tight">The Ultimate 30-Day FMDA Revision Challenge</h3>
+                        <p class="text-sm text-slate-500 line-clamp-3 mb-4 flex-grow">Score 60+ in Financial Management & Data Analytics. A complete 30-day roadmap for Paper 11 success.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 flex justify-end items-center text-[10px] font-bold">
+                            <span class="text-primary group-hover:translate-x-1 transition-transform uppercase font-black tracking-widest">Read Guide <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
                     </div>
+                </article>
 
-                    <h2>🔄 Phase 4: Final Revision & Mock Exams (Days 26–30)</h2>
-                    <p>The final countdown is for consolidating your knowledge. 🏁</p>
-                    <ul>
-                        <li><i class="fas fa-brain"></i> <strong>The 1.5-Day Strategy:</strong> During the final days before the exam, prioritize "Technical" chapters like Partnership, Branch, and Single Entry. Foundation-level chapters like BRS or Consignment can be revised earlier as they are easier to retain. 🧠💡</li>
-                        <li><i class="fas fa-stopwatch"></i> <strong>Accuracy vs. Completion:</strong> It is better to accurately attempt 90 marks than to rush through 100 marks with silly mistakes. Aim for high accuracy. ✅🎯</li>
-                        <li><i class="fas fa-paste"></i> <strong>Mock Tests:</strong> Solve at least one full paper to get used to the length of the exam. Start with MCQs, move to 7-mark questions, and save the 14-mark giants for the end. ⏱️📝</li>
-                    </ul>
-
-                    <div class="highlight-box !bg-rose-50 !border-rose-400">
-                        <h3 class="!text-rose-800 !mt-0">💡 Pro-Tips for Financial Accounting</h3>
-                        <ul class="mb-0 text-rose-900">
-                            <li><i class="fas fa-sort-amount-down"></i> <strong>Sequence Matters:</strong> Start your paper with MCQs to build momentum.🏃‍♂️💨</li>
-                            <li><i class="fas fa-sun"></i> <strong>Accounting Standards on Exam Day:</strong> The best time to revise AS 10, 11, and 12 is the morning of the exam. 🌅📖</li>
-                            <li><i class="fas fa-list-ol"></i> <strong>Step Marking:</strong> Don't panic if a balance sheet doesn't tally! You get marks for every correct entry. 📊🖋️</li>
-                            <li><i class="fas fa-exclamation-triangle"></i> <strong>Avoid the "Giant" Trap:</strong> Don't start with a massive Partnership problem. Ruining time management early is risky. 🚫🪤</li>
-                        </ul>
+                <!-- Management Accounting Card -->
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-ma.html'">
+                    <div class="h-40 md:h-48 bg-green-100 relative overflow-hidden flex items-center justify-center text-green-500 text-5xl">
+                        <i class="fas fa-sitemap group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <p class="text-base md:text-xl font-bold text-center text-slate-800 mt-12 italic">By following this 30-day blueprint, you’ll turn a lengthy syllabus into a manageable victory. Stay consistent, practice rigorously, and keep your accuracy high. You are ready to excel! 💪🌟</p>
-                </div>
-            </article>
-        </section>
-
-        <!-- Article: Taxation -->
-        <section id="view-article-taxation" class="view-section">
-            <button onclick="showView('view-blog')" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back to Blog
-            </button>
-            <article class="bg-white rounded-[32px] md:rounded-[40px] shadow-xl overflow-hidden max-w-4xl mx-auto">
-                <header class="bg-gradient-to-br from-amber-500 to-orange-600 p-8 md:p-20 text-center text-white">
-                    <h1 class="text-2xl md:text-5xl font-extrabold leading-tight">Mastering CMA Inter Taxation: A 30-Day Blueprint for Success 🚀🧾</h1>
-                </header>
-                <div class="p-6 md:p-16 article-body">
-                    <p class="text-base md:text-lg font-medium text-slate-700 italic mb-8">Direct and Indirect Taxation (Paper 7) is often considered one of the most extensive papers in the CMA Intermediate group. With a vast syllabus, the key to scoring 70+ isn't just hard work—it's Smart Work. 💡</p>
-                    
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7792469883739877" data-ad-slot="IN_ARTICLE_SLOT"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold text-green-600 uppercase tracking-widest bg-green-50 px-3 py-1 rounded-full">Paper 12</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors leading-tight">Mission Management Accounting: 30-Day Revision Strategy</h3>
+                        <p class="text-sm text-slate-500 line-clamp-3 mb-4 flex-grow">Score 60+ in Paper 12 with our expert blueprint covering ABC, Budget, and Decision Theory.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 flex justify-end items-center text-[10px] font-bold">
+                            <span class="text-primary group-hover:translate-x-1 transition-transform uppercase font-black tracking-widest">Read Guide <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
                     </div>
+                </article>
 
-                    <div class="highlight-box !bg-amber-50 !border-amber-400">
-                        <h2 class="!mt-0 !text-amber-800"><i class="fas fa-chess-knight"></i> The Strategy: IDT First, DT Next</h2>
-                        <p class="text-amber-900 mb-0">Start with Indirect Taxation (IDT). Because the course content is more concise, you can finish it sooner, giving you a psychological win before tackling the massive Direct Taxation (DT) portion. 🏆</p>
+                <!-- OMSM Card -->
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-omsm.html'">
+                    <div class="h-40 md:h-48 bg-purple-100 relative overflow-hidden flex items-center justify-center text-purple-500 text-5xl">
+                        <i class="fas fa-cogs group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-
-                    <h2>📅 Phase 1: Indirect Taxation (Days 1–8) 🏗️</h2>
-                    <p>GST and Customs are scoring areas. Focus on the core pillars that make up about 80% of the weightage.</p>
-                    <ul>
-                        <li><i class="fas fa-link"></i> <strong>Days 1–3: The Core of GST:</strong> Focus on Levy and Collection, Supply, and RCM. ⛓️</li>
-                        <li><i class="fas fa-clock"></i> <strong>Days 4–5: Logistics of Supply:</strong> Master Value of Supply and Time of Supply. Guaranteed areas for practical questions. ⏱️💎</li>
-                        <li><i class="fas fa-credit-card"></i> <strong>Days 6–7: ITC & Liability:</strong> Study Input Tax Credit (ITC) and Computation of GST Liability in depth. 💳</li>
-                        <li><i class="fas fa-plane"></i> <strong>Day 8: Customs & Quick Brush-up:</strong> A mandatory question usually comes from Customs Duty, so don't skip it! ✈️📦</li>
-                    </ul>
-
-                    <h2>📅 Phase 2: Direct Taxation – The "Big Five" (Days 9–20) 💰</h2>
-                    <ul>
-                        <li><i class="fas fa-home"></i> <strong>Days 9–10: Residential Status:</strong> A foundation topic you must master. 🏠</li>
-                        <li><i class="fas fa-briefcase"></i> <strong>Days 11–13: Salaries & House Property:</strong> Practice as many practical problems as possible. 💼</li>
-                        <li><i class="fas fa-chart-line"></i> <strong>Days 14–17: PGBP & Capital Gains:</strong> Heavy chapters. Focus on indexation and exemptions for Capital Gains. 📈</li>
-                        <li><i class="fas fa-cut"></i> <strong>Days 18–20: Clubbing, Set-off & Deductions:</strong> Recuring favorites. Deductions (Chapter VI-A) are essential. ✂️</li>
-                    </ul>
-
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7792469883739877" data-ad-slot="AUTO_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold text-purple-600 uppercase tracking-widest bg-purple-50 px-3 py-1 rounded-full">Paper 9</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors leading-tight">Crack CMA Inter OM-SM: The Ultimate 30-Day Blueprint</h3>
+                        <p class="text-sm text-slate-500 line-clamp-3 mb-4 flex-grow">Target 80+ in Paper 9. A strategic revision plan for Operations & Strategic Management.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 flex justify-end items-center text-[10px] font-bold">
+                            <span class="text-primary group-hover:translate-x-1 transition-transform uppercase font-black tracking-widest">Read Guide <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
                     </div>
+                </article>
 
-                    <h2>📅 Phase 3: Special Taxation & Procedures (Days 21–25) 📑</h2>
-                    <ul>
-                        <li><i class="fas fa-users"></i> <strong>Days 21–22: Various Persons:</strong> Pay close attention to taxation of political parties and entities. 👥</li>
-                        <li><i class="fas fa-receipt"></i> <strong>Days 23–24: TDS & TCS:</strong> Focus on the most important tested sections. 🧾</li>
-                        <li><i class="fas fa-file-alt"></i> <strong>Day 25: Advance Tax & Returns:</strong> Briefly cover administrative procedures. 📝</li>
-                    </ul>
-
-                    <div class="highlight-box !bg-slate-900 !border-amber-500 !text-white">
-                        <h3 class="!text-amber-400 !mt-0">🌟 Golden Rules for 70+ Marks</h3>
-                        <ul class="mb-0 text-slate-300">
-                            <li><strong>Taxation is a Relationship:</strong> Practice it every single day to maintain consistency. ❤️📅</li>
-                            <li><strong>The Scanner is Your Best Friend:</strong> Use it to identify the "examiner's mindset." 🔍</li>
-                            <li><strong>Charts & Notes:</strong> Don't just read; draw flowcharts for GST and DT provisions. 🎨🖋️</li>
-                        </ul>
+                <!-- Paper 10 Card -->
+                <article class="blog-card group cursor-pointer" onclick="window.location.href='blog/blog-paper10.html'">
+                    <div class="h-40 md:h-48 bg-blue-100 relative overflow-hidden flex items-center justify-center text-blue-500 text-5xl">
+                        <i class="fas fa-briefcase group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    <p class="text-base md:text-xl font-bold text-center text-slate-800 mt-12 italic">Success is a combination of discipline and strategy. Conquering the Taxation paper is within your reach! 💪🌟</p>
-                </div>
-            </article>
-        </section>
-
-        <!-- Article: Law -->
-        <section id="view-article-law" class="view-section">
-            <button onclick="showView('view-blog')" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back to Blog
-            </button>
-            <article class="bg-white rounded-[32px] md:rounded-[40px] shadow-xl overflow-hidden max-w-4xl mx-auto">
-                <header class="bg-gradient-to-br from-emerald-500 to-teal-600 p-8 md:p-20 text-center text-white">
-                    <h1 class="text-2xl md:text-5xl font-extrabold leading-tight">Mastering CMA Inter Law: A 30-Day Blueprint for Success ⚖️📚</h1>
-                </header>
-                <div class="p-6 md:p-16 article-body">
-                    <p class="text-base md:text-lg font-medium text-slate-700 italic mb-8">Law and Ethics is one of the most scoring papers if approached strategically. Instead of getting lost in legal jargon, follow this plan that prioritizes high-weightage areas. 🎯</p>
-                    
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7792469883739877" data-ad-slot="IN_ARTICLE_SLOT"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Paper 10</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors leading-tight">Mission 60+: CMA Inter Corporate Accounting & Auditing Strategy</h3>
+                        <p class="text-sm text-slate-500 line-clamp-3 mb-4 flex-grow">Score 60+ in Corporate Accounting & Auditing. A complete 30-day roadmap for Paper 10 success.</p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 flex justify-end items-center text-[10px] font-bold">
+                            <span class="text-primary group-hover:translate-x-1 transition-transform uppercase font-black tracking-widest">Read Guide <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
                     </div>
+                </article>
 
-                    <h2>🏛️ The Structure of the Paper</h2>
-                    <ul>
-                        <li><i class="fas fa-scroll"></i> <strong>Commercial Laws</strong> (30-40 Marks) 📜</li>
-                        <li><i class="fas fa-industry"></i> <strong>Industrial Laws</strong> (15-20 Marks) 🏭</li>
-                        <li><i class="fas fa-building"></i> <strong>Corporate Law</strong> (35-40 Marks) 🏢</li>
-                        <li><i class="fas fa-handshake"></i> <strong>Ethics</strong> (10 Marks) 🤝</li>
-                    </ul>
-
-                    <h2>📅 Phase 1: Corporate Law Powerhouse (Days 1–10)</h2>
-                    <ul>
-                        <li><i class="fas fa-file-contract"></i> <strong>Days 1-4: Basics:</strong> Types of companies, MOA, and AOA. Understanding "Lifting the Corporate Veil." 📄</li>
-                        <li><i class="fas fa-coins"></i> <strong>Days 5-7: Capital & Debentures:</strong> Rules regarding bonus shares and rights issues. 💰</li>
-                        <li><i class="fas fa-user-tie"></i> <strong>Days 8-10: Directors:</strong> Crucial! Appointment, qualifications, and powers. 👨‍💼👩‍💼</li>
-                    </ul>
-
-                    <h2>🏗️ Phase 2: Industrial Laws (Days 11–18)</h2>
-                    <ul>
-                        <li><i class="fas fa-wallet"></i> <strong>Days 11-13: Employee Benefits:</strong> Factories Act, Payment of Bonus, and EPF. 💸</li>
-                        <li><i class="fas fa-shield-alt"></i> <strong>Days 14-16: Social Security:</strong> ESI Act and Payment of Gratuity. 🛡️</li>
-                        <li><i class="fas fa-balance-scale"></i> <strong>Days 17-18: Code on Wages:</strong> Minimum wage provisions and definitions. ⚖️</li>
-                    </ul>
-
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7792469883739877" data-ad-slot="AUTO_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    </div>
-
-                    <div class="highlight-box !bg-emerald-50 !border-emerald-400">
-                        <h3 class="!text-emerald-800 !mt-0">💡 Pro-Tips for the Exam Hall</h3>
-                        <ul class="mb-0 text-emerald-900">
-                            <li><strong>Read Twice:</strong> A single word like "may" or "shall" can change everything. 🧐</li>
-                            <li><strong>Point-Wise Answers:</strong> Avoid long paragraphs. Use headings and bullet points. 📌</li>
-                            <li><strong>Provision > Analysis > Conclusion:</strong> State the provision before applying it to the facts. 🕵️‍♂️</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- Article: Costing -->
-        <section id="view-article-costing" class="view-section">
-            <button onclick="showView('view-blog')" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back to Blog
-            </button>
-            <article class="bg-white rounded-[32px] md:rounded-[40px] shadow-xl overflow-hidden max-w-4xl mx-auto">
-                <header class="bg-gradient-to-br from-indigo-500 to-primary p-8 md:p-20 text-center text-white">
-                    <h1 class="text-2xl md:text-5xl font-extrabold leading-tight">Mastering CMA Inter Costing: A 30-Day Blueprint for Success 🚀</h1>
-                </header>
-                <div class="p-6 md:p-16 article-body">
-                    <p class="text-base md:text-lg font-medium text-slate-700 italic mb-8">Cost Accounting (Paper 8) is the backbone of the CMA Inter curriculum. It often determines whether you just pass or secure a rank. 🏆 Success is about strategic prioritization. 💡</p>
-
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7792469883739877" data-ad-slot="IN_ARTICLE_SLOT"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    </div>
-
-                    <h2>🎯 The Secret Weapon: The 30-Mark MCQ Strategy</h2>
-                    <ul>
-                        <li><i class="fas fa-hashtag"></i> <strong>CAS Mastery:</strong> Memorize CAS 1 to 24 names and numbers. 🔢</li>
-                        <li><i class="fas fa-book"></i> <strong>The "Bit" Bank:</strong> Solve every objective provided by the Institute. 📚</li>
-                        <li><i class="fas fa-pen-ruler"></i> <strong>Formula Mastery:</strong> Create a cheat sheet for marginal costing ratios. 📝</li>
-                    </ul>
-
-                    <h2>🏗️ Phase 1: Building the Foundation (Days 1–7)</h2>
-                    <ul>
-                        <li><i class="fas fa-file-invoice"></i> <strong>The Cost Sheet:</strong> Master stock treatment and cost classification. 📄</li>
-                        <li><i class="fas fa-box"></i> <strong>Material Costing:</strong> Focus on EOQ and inventory valuation. 📦</li>
-                        <li><i class="fas fa-users-cog"></i> <strong>Labor & Overheads:</strong> Incentive schemes and overhead distribution. ⚙️</li>
-                    </ul>
-
-                    <div class="ad-container">
-                        <span class="ad-label">Advertisement</span>
-                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7792469883739877" data-ad-slot="AUTO_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    </div>
-
-                    <h2>🏭 Phase 2: Methods of Costing (Days 8–15)</h2>
-                    <ul>
-                        <li><i class="fas fa-bus"></i> <strong>Operating Costing:</strong> Focus on Transport and Hotels. 🚌🏥</li>
-                        <li><i class="fas fa-hard-hat"></i> <strong>Contract Costing:</strong> Escalation Clause and Notional Profit. 🏗️</li>
-                        <li><i class="fas fa-flask"></i> <strong>Process Costing:</strong> Equivalent Production is key! ⚗️</li>
-                        <li><i class="fas fa-sync"></i> <strong>Reconciliation:</strong> Integrated and Non-Integrated systems. 📑</li>
-                    </ul>
-
-                    <h2>⚖️ Phase 3: Decision Making & Control (Days 16–23)</h2>
-                    <ul>
-                        <li><i class="fas fa-lightbulb"></i> <strong>Marginal Costing:</strong> Limiting Factor and Make or Buy decisions. 💡</li>
-                        <li><i class="fas fa-chart-bar"></i> <strong>Standard Costing:</strong> Material and Labor Variances. 📉</li>
-                        <li><i class="fas fa-wallet"></i> <strong>Budgets:</strong> Cash, Flexible, and Production Budgets. 💰</li>
-                    </ul>
-
-                    <div class="highlight-box">
-                        <h3 class="mt-0">💡 Pro-Tips for the Exam Hall</h3>
-                        <ul class="mb-0">
-                            <li><i class="fas fa-hourglass-half"></i> <strong>Time Management:</strong> Secure Budgets and Contract marks quickly first. ⏳</li>
-                            <li><i class="fas fa-check-double"></i> <strong>Step Marking:</strong> Don't leave blanks—writing the format earns marks! 📝</li>
-                            <li><i class="fas fa-clipboard-list"></i> <strong>Working Notes:</strong> Clear notes are as vital as the final answer. 📋</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- About Section -->
-        <section id="view-about" class="view-section">
-            <button onclick="showView('view-blog')" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back
-            </button>
-            <div class="bg-white p-8 md:p-12 rounded-[32px] shadow-xl max-w-4xl mx-auto">
-                <h2 class="text-2xl md:text-3xl font-extrabold mb-8 text-primary flex items-center gap-3 leading-tight">📚 About Prepogy CMA Strategy</h2>
-                <div class="text-slate-700 article-body">
-                    <p>Prepogy is a dedicated educational platform for CMA Intermediate students. Our goal is to provide official ICMAI Syllabus 2022 aligned study blueprints and MCQ practice tools to help you succeed in your professional journey. All strategies are compiled to help students navigate high-weightage areas and manage time effectively.</p>
-                </div>
             </div>
         </section>
 
@@ -494,8 +299,8 @@
         </div>
         <nav class="flex flex-wrap justify-center gap-6 mb-4 text-xs font-bold uppercase tracking-widest text-slate-400">
             <a href="index.html" class="hover:text-primary transition-colors">Home</a>
-            <a href="javascript:void(0)" onclick="showView('view-blog')" class="text-indigo-600 underline">CMA Strategy Blog</a>
-            <a href="javascript:void(0)" onclick="showView('view-about')" class="hover:text-primary transition-colors">About</a>
+            <a href="blog.html" class="text-indigo-600 underline">CMA Strategy Blog</a>
+            <a href="blog/blog-about.html" class="hover:text-primary transition-colors">About</a>
         </nav>
         <p class="text-slate-400 text-xs font-bold mb-2 px-4">Prepogy © 2025 - Your CMA Study Companion</p>
         <p class="text-sm font-bold text-emerald-500 mt-4 flex items-center justify-center gap-2">
@@ -503,54 +308,5 @@
         </p>
     </footer>
 
-    <script>
-        const viewMap = {
-            '': 'view-blog',
-            'accounts': 'view-article-accounts',
-            'taxation': 'view-article-taxation',
-            'law': 'view-article-law',
-            'costing': 'view-article-costing',
-            'about': 'view-about'
-        };
-
-        function getViewIdFromHash() {
-            const hash = window.location.hash.replace('#', '');
-            return viewMap[hash] || 'view-blog';
-        }
-
-        function updateView() {
-            const viewId = getViewIdFromHash();
-            
-            document.querySelectorAll('.view-section').forEach(s => {
-                s.classList.remove('active');
-            });
-
-            const target = document.getElementById(viewId);
-            if(target) {
-                target.classList.add('active');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        }
-
-        function showView(viewIdOrHash) {
-            let hash = '';
-            
-            if (viewIdOrHash === 'view-blog' || viewIdOrHash === '') hash = '';
-            else if (viewIdOrHash === 'view-article-accounts') hash = 'accounts';
-            else if (viewIdOrHash === 'view-article-taxation') hash = 'taxation';
-            else if (viewIdOrHash === 'view-article-law') hash = 'law';
-            else if (viewIdOrHash === 'view-article-costing') hash = 'costing';
-            else if (viewIdOrHash === 'view-about') hash = 'about';
-            else {
-                hash = viewIdOrHash;
-            }
-
-            window.location.hash = hash;
-        }
-
-        window.addEventListener('hashchange', updateView);
-        window.addEventListener('load', updateView);
-    </script>
 </body>
 </html>
-
